@@ -336,7 +336,7 @@ void Emitter::FlowSeqPrepareNode(EmitterNodeType::value child) {
     if (m_pState->CurGroupChildCount() == 0)
       m_stream << "[";
     else
-      m_stream << ",";
+      m_stream << " |";
   }
 
   switch (child) {
@@ -477,7 +477,7 @@ void Emitter::FlowMapPrepareSimpleKey(EmitterNodeType::value child) {
     if (m_pState->CurGroupChildCount() == 0)
       m_stream << "{";
     else
-      m_stream << ",";
+      m_stream << " |";
   }
 
   switch (child) {
